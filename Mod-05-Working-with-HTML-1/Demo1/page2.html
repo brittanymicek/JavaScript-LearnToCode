@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo</title>
+</head>
+
+<body>
+    <div id="messageDiv"></div>
+    <script>
+        const div = document.getElementById("messageDiv");
+
+let today = new Date();
+let month = today.getMonth() + 1;
+let dayOfMonth = today.getDate();
+let year = today.getFullYear();
+
+let welcomeMessage = "Welcome, today is " + month + "/" + dayOfMonth + "/" + year;
+
+        div.innerHTML = welcomeMessage;
+    </script>
+</body>
+
+</html>
